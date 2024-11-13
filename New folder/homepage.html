@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploads Page</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">VOYAGE VISTA TOURS AND TRAVELS</div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">USA</a></li>
+            <li><a href="">UK</a></li>
+            <li><a href="">GERMANY</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="font-size: 50px;">User Identification</h1>
+    <h3>Please upload Aadhar for identification purposes <br>
+        (File type: PDF, max size: 20KB)<br><br></h3>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="document" accept=".pdf">
+        <button type="submit">Upload</button>
+    </form>
+
+    <br><br><br><br>
+    <div class="message">
+        <p id="message" class="hidden"></p>
+    </div>
+    
+    <script>
+        // Get the message element
+        const messageElement = document.getElementById('message');
+        const message = ''; // Replace with the actual message if needed
+        if (message) {
+            messageElement.textContent = message;
+            messageElement.classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>

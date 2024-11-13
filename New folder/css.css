@@ -1,0 +1,120 @@
+html{
+  height: 120%;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom,#59B4C3, #86A7FC);
+}
+
+nav {
+  background-color: #333333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: greenyellow;
+}
+
+.titleDiv {
+  height: 225px;
+  width: 800px;
+  margin: 20px auto;
+  background-color: #466ef1;
+  border-radius: 25px;
+  text-align: center;
+  color: yellow;
+}
+
+.tour-container {
+  /* display: flex;
+  justify-content: space-around; */
+  /* align-items: center; */
+  text-align: center;
+  display: inline-block;
+  width: 250px; /* Limit max width for better alignment */
+  height: 150px;
+}
+
+.USA{
+  background: url(USA.JPG);
+  background-size: cover;
+  display: inline-block; /* Display tour divs inline */
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Limit max width for better alignment */
+  height: 150px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.USA:hover{
+  transform: translateY(-10px);
+  /* transform: translateY(+5px); */
+}
+
+.UK{
+  background: url(UK.JPG);
+  background-size: cover;
+  display: inline-block; /* Display tour divs inline */
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Limit max width for better alignment */
+  height: 150px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.UK:hover{
+  transform: translateY(-10px);
+}
+
+.GERMANY{
+  background: url(GERMANY.JPG);
+  background-size: cover;
+  display: inline-block; /* Display tour divs inline */
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Limit max width for better alignment */
+  height: 150px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.GERMAY:hover{
+  transform: translateY(-10px);
+}
